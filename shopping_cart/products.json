@@ -7,7 +7,7 @@
       "variant": "ergonomic",
       "color": "Blue",
       "image": "./img/chair_one.jpg",
-      "price": "5090"
+      "price": "59"
     },
     {
       "id": "102",
@@ -16,7 +16,7 @@
       "variant": "ergonomic",
       "color": "black",
       "image": "./img/chair_two.jpg",
-      "price": "6000"
+      "price": "65"
     },
     {
       "id": "103",
@@ -25,7 +25,7 @@
       "variant": "ergonomic",
       "color": "black",
       "image": "./img/chair_three.jpg",
-      "price": "3500"
+      "price": "35"
     },
     {
       "id": "104",
@@ -34,7 +34,7 @@
       "variant": "ergonomic",
       "color": "green",
       "image": "./img/chair_four.png",
-      "price": "8999"
+      "price": "89"
     },
     {
       "id": "105",
@@ -43,7 +43,7 @@
       "variant": "ergonomic",
       "color": "black",
       "image": "./img/chair_five.jpeg",
-      "price": "4000"
+      "price": "50"
     }
   ]
 }

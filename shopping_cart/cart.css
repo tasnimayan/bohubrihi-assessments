@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: white;
+}
+
+.container {
+  padding: 100px;
+  background-color: #eaa;
+}
+
+section h2:first-child {
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+}
+
+.inner-container {
+  background: #eeeeee;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 60px;
+  font-weight: 600;
+}
+.summary-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.product-image {
+  flex: 1;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  margin: 10px 10px;
+}
+.item-container p:nth-child(2) {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  flex: 7;
+}
+.inner-item {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+}
+.inner-item button {
+  /* border: 1px solid gray; */
+  border: none;
+  background: #f7f7f7;
+  padding: 4px 6px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.inner-item input {
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+/* To turn off the arrow button inside number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inner-item .btnCancel {
+  color: rgb(255, 52, 52);
+  margin-right: 20px;
+}
+.inner-item span {
+  margin-left: 10px;
+}
+.price {
+  width: 80px;
+}
+
+.item-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 20px -10px black;
+}
+.inner-item .btnCancel:active {
+  color: rgb(0, 0, 0);
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 4px 6px;
+  }
+  .product-image {
+    display: inline-block;
+  }
+  .item-container {
+    /* display: inline-block; */
+    width: 94%;
+    flex-wrap: wrap;
+  }
+  .item-container p:nth-child(2) {
+    display: inline-block;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    padding: 10px;
+  }
+  .inner-container {
+    padding: 4px 6px;
+  }
+  .product-image {
+    flex: 3;
+  }
+  .item-container {
+    flex-wrap: wrap;
+  }
+  .item-container p:nth-child(2) {
+    flex: 7;
+    justify-content: center;
+  }
+}

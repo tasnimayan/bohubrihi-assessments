@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="productPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>E-Cart</title>
+  </head>
+  <body>
+    <!-- Available Products list-->
+    <section>
+      <h2>Get Your Products From Here</h2>
+      <div class="products-container">
+        <!-- products list will be added by javascript -->
+      </div>
+    </section>
+
+    <!-- Shopping Cart section -->
+    <section class="container main-container">
+      <h2>Shopping Cart</h2>
+      <div class="inner-container">
+        <div class="cart-container">
+          <!-- Cart products will be added by javascript -->
+        </div>
+
+        <div class="summary-container">
+          <div class="summary-items">
+            <p>Subtotal:</p>
+            <p id="subTotal"><span>$</span>0</p>
+          </div>
+          <div class="summary-items">
+            <p>Tax:</p>
+            <p id="taxTotal"><span>$</span>0</p>
+          </div>
+          <div class="summary-items">
+            <p>Total:</p>
+            <p id="totalPrice"><span>$</span>0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="objectScript.js"></script>
+  </body>
+</html>

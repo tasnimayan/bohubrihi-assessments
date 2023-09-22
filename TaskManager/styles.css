@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 20px 200px;
+  background-color: antiquewhite;
+}
+
+.title {
+  font-size: 28px;
+  padding: 20px 0;
+}
+
+input {
+  border: 1px solid #666;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #444;
+  letter-spacing: 1px;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #888;
+  opacity: 1; /* Firefox */
+}
+
+#searchInput {
+  margin-left: 40px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+button {
+  padding: 5px 20px;
+  font-size: 14px;
+}
+.task_list ol {
+  margin-left: 30px;
+  list-style-type: decimal-leading-zero;
+  color: gray;
+}
+
+.task_list ol li {
+  padding: 6px 0;
+  padding-left: 5px;
+  border-bottom: 1px solid #ddd;
+}
+.task_list ol li:hover .del {
+  display: inline;
+}
+.task_list ol li span {
+  display: none;
+  padding: 0 5px;
+  margin-left: 10px;
+  color: red;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.task_list ol li span:hover {
+  background-color: #ffa2a2;
+  color: #ffffff;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
